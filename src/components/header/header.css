@@ -19,6 +19,11 @@
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  transition: 0.3s ease;
+}
+
+.nav__logo:hover {
+  scale: 1.2;
 }
 
 .nav__list {
@@ -46,6 +51,12 @@
 .active-link,
 .nav__link:hover {
   color: var(--title-color-dark);
+  scale: 1.2;
+}
+
+/* Change header background */
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ======= BREAKPOINTS ======= */

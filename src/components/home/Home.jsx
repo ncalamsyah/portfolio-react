@@ -15,7 +15,6 @@ const Home = () => {
 
           <Data />
         </div>
-
         <ScrollDown />
       </div>
     </section>

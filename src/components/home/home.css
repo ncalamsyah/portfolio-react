@@ -1,10 +1,10 @@
 .home__container {
-  row-gap: 7rem;
+  row-gap: 2rem;
 }
 
 .home__content {
   grid-template-columns: 116px repeat(2, 1fr);
-  padding-top: 5.5rem;
+  padding-top: 3.5rem;
   column-gap: 2rem;
   align-items: center;
 }
@@ -16,12 +16,14 @@
 }
 
 .home__social-icon {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   color: var(--title-color);
+  transition: 0.3s;
 }
 
 .home__social-icon:hover {
   color: var(--title-color-dark);
+  scale: 1.2;
 }
 
 .home__title {
@@ -84,7 +86,17 @@
 }
 
 .home__scroll {
-  margin-left: 9.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 9.25rem; */
+}
+
+.home__scroll:hover,
+.home__scroll-arrow,
+.home__scroll-name,
+.home__scroll-mouse {
+  cursor: default;
 }
 
 .wheel {

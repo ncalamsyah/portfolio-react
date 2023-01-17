@@ -154,6 +154,7 @@ img {
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  transition: 0.3s;
 }
 
 .button:hover {
@@ -164,9 +165,13 @@ img {
   margin-left: var(--mb-0-5);
 }
 
-.button--flex {
+.button__flex {
   display: inline-flex;
   align-items: center;
+}
+
+.button__container {
+  display: flex;
 }
 
 /*=============== BREAKPOINTS ===============*/

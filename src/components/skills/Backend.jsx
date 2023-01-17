@@ -40,6 +40,48 @@ const Backend = () => {
               <span className="skills__level">Basic</span>
             </div>
           </div>
+
+          <div className="skills__data">
+            <i className="bx bx-badge-check"></i>
+            <div className="">
+              <h3 className="skills__name">Codeigniter</h3>
+              <span className="skills__level">Basic</span>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <i className="bx bx-badge-check"></i>
+            <div className="">
+              <h3 className="skills__name">Laravel</h3>
+              <span className="skills__level">Basic</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="skills__group">
+          <div className="skills__data">
+            <i className="bx bx-badge-check"></i>
+            <div className="">
+              <h3 className="skills__name">Docker</h3>
+              <span className="skills__level">Basic</span>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <i className="bx bx-badge-check"></i>
+            <div className="">
+              <h3 className="skills__name">Firestore</h3>
+              <span className="skills__level">Basic</span>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <i className="bx bx-badge-check"></i>
+            <div className="">
+              <h3 className="skills__name">Postman</h3>
+              <span className="skills__level">Basic</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

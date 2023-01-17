@@ -9,17 +9,19 @@ const Services = () => {
   };
 
   return (
-    <section className="services section" id="services">
-      <h2 className="section__title">Services</h2>
-      <span className="section__subtitle">What I Offer</span>
+    <section className="services section" id="portfolio">
+      <h2 className="section__title">Works</h2>
+      <span className="section__subtitle">
+        These are projects i've worked on
+      </span>
 
       <div className="services__container container grid">
         <div className="services__content">
+          <img src="" alt="" />
           <div>
             <i className="uil uil-arrow services__icon"></i>
-            <h3 className="services__title">
-              UI/UX <br /> Designer
-            </h3>
+            <h3 className="services__title">Purwokerto Bluessummit</h3>
+            <h5>Frontend Developer</h5>
           </div>
 
           <span className="services__button" onClick={() => toggleTab(1)}>
@@ -71,9 +73,8 @@ const Services = () => {
         <div className="services__content">
           <div>
             <i className="uil uil-web-grid services__icon"></i>
-            <h3 className="services__title">
-              Frontend <br /> Engineer
-            </h3>
+            <h3 className="services__title">BUMDes Amanah</h3>
+            <h5>Fullstack Developer</h5>
           </div>
 
           <span className="services__button" onClick={() => toggleTab(2)}>
@@ -125,9 +126,8 @@ const Services = () => {
         <div className="services__content">
           <div>
             <i className="uil uil-web-grid services__icon"></i>
-            <h3 className="services__title">
-              Backend <br /> Engineer
-            </h3>
+            <h3 className="services__title">Umah Penganten</h3>
+            <h5>Fullstack Developer</h5>
           </div>
 
           <span className="services__button" onClick={() => toggleTab(3)}>
