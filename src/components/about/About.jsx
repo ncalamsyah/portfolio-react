@@ -3,40 +3,66 @@ import "./about.css";
 import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/resume.pdf";
 import Info from "./Info";
+import { Fade, Grow } from "@mui/material";
 
-const About = () => {
+const About = ({ innerRef }) => {
   return (
     <section className="about section" id="about">
       <h2 className="section__title">About Me</h2>
       <span className="section__subtitle">My introduction</span>
 
       <div className="about__container container grid">
-        <img src={AboutImg} alt="" className="about__img" />
+        <Fade
+          in={innerRef.aboutVisible}
+          style={{ transformOrigin: "0 0 0" }}
+          {...(innerRef.aboutVisible ? { timeout: 1000 } : {})}
+        >
+          <img src={AboutImg} alt="" className="about__img" />
+        </Fade>
 
-        <div className="about__data">
-          {/* <Info /> */}
-          <p className="about__description">
-            I'm a graduate of Information System Major from Amikom University of
-            Purwokerto. Highly motivated to learn new things, especially{" "}
-            <strong>programming technologies</strong>.
-          </p>
-          <p className="about__description">
-            I keep <strong>improving</strong> my skills of programming{" "}
-            <strong>everyday</strong>, even if it's a{" "}
-            <strong>public holiday</strong>! I’m open up{" "}
-            <strong>Opportunities for joining a multinational company</strong>{" "}
-            or <i>healthy</i> Startup.
-          </p>
-          <p className="about__description">
-            I’m open up{" "}
-            <strong>Opportunities for joining a multinational company</strong>{" "}
-            or <i>healthy</i> Startup.
-          </p>
-
+        <div ref={innerRef.aboutRef} className="about__data">
+          <Grow
+            in={innerRef.aboutVisible}
+            style={{ transformOrigin: "0 0 0" }}
+            unmountOnExit
+          >
+            {/* <Info /> */}
+            <p className="about__description">
+              I'm a graduate of Information System Major from Amikom University
+              of Purwokerto. Highly motivated to learn new things, especially{" "}
+              <strong>programming technologies</strong>.
+            </p>
+          </Grow>
+          <Grow
+            in={innerRef.aboutVisible}
+            style={{ transformOrigin: "0 0 0" }}
+            {...(innerRef.aboutVisible ? { timeout: 1000 } : {})}
+            unmountOnExit
+          >
+            <p className="about__description">
+              I keep <strong>improving</strong> my skills of programming{" "}
+              <strong>everyday</strong>, even if it's a{" "}
+              <strong>public holiday</strong>! I’m open up{" "}
+              <strong>Opportunities for joining a multinational company</strong>{" "}
+              or <i>healthy</i> Startup.
+            </p>
+          </Grow>
+          <Grow
+            in={innerRef.aboutVisible}
+            style={{ transformOrigin: "0 0 0" }}
+            {...(innerRef.aboutVisible ? { timeout: 1500 } : {})}
+            unmountOnExit
+          >
+            <p className="about__description">
+              I’m open up{" "}
+              <strong>Opportunities for joining a multinational company</strong>{" "}
+              or <i>healthy</i> Startup.
+            </p>
+          </Grow>
           <a href={CV} className="button button__flex">
             Download CV
             <svg
-              class="button__icon"
+              className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"

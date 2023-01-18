@@ -190,6 +190,13 @@
   }
 }
 
+/* For medium devices */
+@media screen and (max-width: 576px) {
+  .home__content {
+    padding-top: 1rem;
+  }
+}
+
 /* For small devices */
 @media screen and (max-width: 350px) {
   .home__img {

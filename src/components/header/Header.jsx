@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
 
-const Header = () => {
+const Header = ({ innerRef }) => {
   // ======= Change header background =======
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
@@ -11,7 +11,7 @@ const Header = () => {
 
   // ======= Toggle Menu ========
   const [Toggle, showMenu] = useState(false);
-  const [activeNav, setActiveNav] = useState("#home");
+  const [activeNav, setActiveNav] = useState();
 
   return (
     <header className="header">
@@ -26,7 +26,9 @@ const Header = () => {
                 href="#home"
                 onClick={() => setActiveNav("#home")}
                 className={
-                  activeNav === "#home" ? "nav__link active-link" : "nav__link"
+                  activeNav === "#home" || innerRef.homeVisible
+                    ? "nav__link active-link"
+                    : "nav__link"
                 }
               >
                 <i className="uil uil-estate nav__icon"></i> Home
@@ -37,7 +39,9 @@ const Header = () => {
                 href="#about"
                 onClick={() => setActiveNav("#about")}
                 className={
-                  activeNav === "#about" ? "nav__link active-link" : "nav__link"
+                  activeNav === "#about" || innerRef.aboutVisible
+                    ? "nav__link active-link"
+                    : "nav__link"
                 }
               >
                 <i className="uil uil-user nav__icon"></i> About
@@ -48,7 +52,9 @@ const Header = () => {
                 href="#skills"
                 onClick={() => setActiveNav("#skills")}
                 className={
-                  activeNav === "#skills" ? "nav__link active-link" : "nav__link"
+                  activeNav === "#skills" || innerRef.skillsVisible
+                    ? "nav__link active-link"
+                    : "nav__link"
                 }
               >
                 <i className="uil uil-file-alt nav__icon"></i> Skills
@@ -56,10 +62,10 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a
-                href="#portofolio"
-                onClick={() => setActiveNav("#portfolio")}
+                href="#works"
+                onClick={() => setActiveNav("#works")}
                 className={
-                  activeNav === "#portfolio" ? "nav__link active-link" : "nav__link"
+                  activeNav === "#works" ? "nav__link active-link" : "nav__link"
                 }
               >
                 <i className="uil uil-scenery nav__icon"></i> Portfolio
@@ -70,7 +76,9 @@ const Header = () => {
                 href="#contact"
                 onClick={() => setActiveNav("#contact")}
                 className={
-                  activeNav === "#contact" ? "nav__link active-link" : "nav__link"
+                  activeNav === "#contact"
+                    ? "nav__link active-link"
+                    : "nav__link"
                 }
               >
                 <i className="uil uil-message nav__icon"></i> Contact

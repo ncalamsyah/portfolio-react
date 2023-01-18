@@ -1,29 +1,55 @@
+import { Fade, Slide } from "@mui/material";
 import React from "react";
 
-const Social = () => {
+const Social = ({ innerRef }) => {
   return (
-    <div className="home__social">
-      <a
-        href="https://www.instagram.com/ncalamsyah"
-        className="home__social-icon"
-        target="_blank"
+    <div ref={innerRef.homeRef} className="home__social">
+      <Fade
+        in={innerRef.homeVisible}
+        style={{ transformOrigin: "0 0 0" }}
+        {...(innerRef.homeVisible ? { timeout: 2000 } : {})}
+        mountOnEnter
+        unmountOnExit
       >
-        <i className="uil uil-instagram"></i>
-      </a>
-      <a
-        href="https://www.github.com/ncalamsyah"
-        className="home__social-icon"
-        target="_blank"
+        <a
+          href="https://www.instagram.com/ncalamsyah"
+          className="home__social-icon"
+          target="_blank"
+        >
+          <i className="uil uil-instagram"></i>
+        </a>
+      </Fade>
+      <Fade
+        in={innerRef.homeVisible}
+        style={{ transformOrigin: "0 0 0" }}
+        {...(innerRef.homeVisible ? { timeout: 2500 } : {})}
+        mountOnEnter
+        unmountOnExit
       >
-        <i className="uil uil-github-alt"></i>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/bahar-alamsyah-93035711b"
-        className="home__social-icon"
-        target="_blank"
+        <a
+          href="https://www.github.com/ncalamsyah"
+          className="home__social-icon"
+          target="_blank"
+        >
+          <i className="uil uil-github-alt"></i>
+        </a>
+      </Fade>
+
+      <Fade
+        in={innerRef.homeVisible}
+        style={{ transformOrigin: "0 0 0" }}
+        {...(innerRef.homeVisible ? { timeout: 3000 } : {})}
+        mountOnEnter
+        unmountOnExit
       >
-        <i className="uil uil-linkedin"></i>
-      </a>
+        <a
+          href="https://www.linkedin.com/in/bahar-alamsyah-93035711b"
+          className="home__social-icon"
+          target="_blank"
+        >
+          <i className="uil uil-linkedin"></i>
+        </a>
+      </Fade>
     </div>
   );
 };
