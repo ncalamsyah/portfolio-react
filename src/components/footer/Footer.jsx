@@ -13,7 +13,7 @@ const Footer = () => {
             </li>
 
             <li>
-                <a href="#portfolio" className="footer__link">Portfolio</a>
+                <a href="#works" className="footer__link">Works</a>
             </li>
         </ul>
 
@@ -22,6 +22,7 @@ const Footer = () => {
         href="https://www.instagram.com/ncalamsyah"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
         <i className="uil uil-instagram"></i>
       </a>
@@ -29,6 +30,7 @@ const Footer = () => {
         href="https://www.github.com/ncalamsyah"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
         <i className="uil uil-github-alt"></i>
       </a>
@@ -36,6 +38,7 @@ const Footer = () => {
         href="https://www.linkedin.com/"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
         <i className="uil uil-linkedin"></i>
       </a>

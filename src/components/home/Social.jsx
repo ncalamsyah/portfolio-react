@@ -15,6 +15,7 @@ const Social = ({ innerRef }) => {
           href="https://www.instagram.com/ncalamsyah"
           className="home__social-icon"
           target="_blank"
+          rel="noreferrer"
         >
           <i className="uil uil-instagram"></i>
         </a>
@@ -30,6 +31,7 @@ const Social = ({ innerRef }) => {
           href="https://www.github.com/ncalamsyah"
           className="home__social-icon"
           target="_blank"
+          rel="noreferrer"
         >
           <i className="uil uil-github-alt"></i>
         </a>
@@ -46,6 +48,7 @@ const Social = ({ innerRef }) => {
           href="https://www.linkedin.com/in/bahar-alamsyah-93035711b"
           className="home__social-icon"
           target="_blank"
+          rel="noreferrer"
         >
           <i className="uil uil-linkedin"></i>
         </a>
