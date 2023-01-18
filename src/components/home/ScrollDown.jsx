@@ -3,7 +3,7 @@ import React from "react";
 const ScrollDown = () => {
   return (
     <div className="home__scroll">
-      <a className="home__scroll-button button__flex">
+      <div className="home__scroll-button button__flex">
         <svg
           width="32px"
           height="32px"
@@ -43,7 +43,7 @@ const ScrollDown = () => {
           Scroll Down
           <i className="uil uil-arrow-down home__scroll-arrow"></i>
         </span>
-      </a>
+      </div>
     </div>
   );
 };
