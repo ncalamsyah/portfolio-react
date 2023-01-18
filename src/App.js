@@ -9,7 +9,6 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Scrollup from "./components/scrollup/Scrollup";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useRef, useState } from "react";
 
 const App = () => {
   const { ref: homeRef, inView: homeVisible } = useInView();

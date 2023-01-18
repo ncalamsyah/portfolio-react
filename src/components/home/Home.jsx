@@ -3,7 +3,7 @@ import "./home.css";
 import Social from "./Social";
 import Data from "./Data";
 import ScrollDown from "./ScrollDown";
-import { Fade, Grow } from "@mui/material";
+import { Fade } from "@mui/material";
 
 const Home = ({ innerRef }) => {
   return (

@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./qualification.css";
 
 const Qualification = () => {
-  const [toggleState, setToggleState] = useState(1);
+  // const [toggleState, setToggleState] = useState(1);
 
-  const toggleTab = (index) => {
-    setToggleState(index);
-  };
+  // const toggleTab = (index) => {
+  //   setToggleState(index);
+  // };
   return (
     <section className="services section" id="services">
       <h2 className="section__title">Qualification</h2>

@@ -2,7 +2,6 @@ import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/resume.pdf";
-import Info from "./Info";
 import { Fade, Grow } from "@mui/material";
 
 const About = ({ innerRef }) => {

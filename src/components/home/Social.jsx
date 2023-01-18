@@ -1,4 +1,4 @@
-import { Fade, Slide } from "@mui/material";
+import { Fade } from "@mui/material";
 import React from "react";
 
 const Social = ({ innerRef }) => {
