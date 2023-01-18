@@ -17,7 +17,6 @@ const Services = () => {
 
       <div className="services__container container grid">
         <div className="services__content">
-          <img src="" alt="" />
           <div>
             <i className="uil uil-arrow services__icon"></i>
             <h3 className="services__title">Purwokerto Bluessummit</h3>
@@ -42,7 +41,7 @@ const Services = () => {
                 onClick={() => toggleTab(0)}
               ></i>
 
-              <h3 className="services__modal-title"></h3>
+              <h3 className="services__modal-title">Lorem ipsum dolor sit.</h3>
               <p className="services__modal-description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
                 incidunt?
@@ -95,7 +94,7 @@ const Services = () => {
                 onClick={() => toggleTab(0)}
               ></i>
 
-              <h3 className="services__modal-title"></h3>
+              <h3 className="services__modal-title">Lorem ipsum dolor sit.</h3>
               <p className="services__modal-description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
                 incidunt?
@@ -148,7 +147,7 @@ const Services = () => {
                 onClick={() => toggleTab(1)}
               ></i>
 
-              <h3 className="services__modal-title"></h3>
+              <h3 className="services__modal-title">Lorem ipsum dolor sit.</h3>
               <p className="services__modal-description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
                 incidunt?
