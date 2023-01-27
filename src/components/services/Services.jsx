@@ -9,7 +9,7 @@ const Services = () => {
   };
 
   return (
-    <section className="services section" id="portfolio">
+    <section className="services section" id="works">
       <h2 className="section__title">Works</h2>
       <span className="section__subtitle">
         These are projects i've worked on
