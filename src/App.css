@@ -137,6 +137,7 @@ img {
 
 /*=============== LAYOUT ===============*/
 .container {
+  /* background-color: cyan; */
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
@@ -145,6 +146,12 @@ img {
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+.main {
+  /* background-color: aquamarine; */
+  margin: 0 10rem;
+  box-shadow: 0 2px 38px rgba(0, 0, 0, 0.2);
 }
 
 /*=============== BUTTONS ===============*/
@@ -191,6 +198,11 @@ img {
     width: 22px;
     height: 22px;
   }
+
+  .main {
+    padding: 0 6rem;
+    margin: 0 3rem;
+  }
 }
 
 /* For medium devices */
@@ -209,6 +221,10 @@ img {
 }
 
 @media screen and (max-width: 576px) {
+  .main {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /* For small devices */

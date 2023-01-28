@@ -65,10 +65,28 @@ const Header = ({ innerRef }) => {
                 href="#works"
                 onClick={() => setActiveNav("#works")}
                 className={
-                  activeNav === "#works" ? "nav__link active-link" : "nav__link"
+                  activeNav === "#works" || innerRef.worksVisible
+                    ? "nav__link active-link"
+                    : "nav__link"
                 }
               >
                 <i className="uil uil-scenery nav__icon"></i> Works
+              </a>
+            </li>
+
+            <li className="nav__item">
+              <a
+                href="#qualification"
+                onClick={() => setActiveNav("#qualification")}
+                className={
+                  activeNav === "#qualification" ||
+                  innerRef.qualificationVisible
+                    ? "nav__link active-link"
+                    : "nav__link"
+                }
+              >
+                <i className="uil uil-briefcase-alt nav__icon"></i>{" "}
+                Qualification
               </a>
             </li>
             <li className="nav__item">
@@ -76,7 +94,7 @@ const Header = ({ innerRef }) => {
                 href="#contact"
                 onClick={() => setActiveNav("#contact")}
                 className={
-                  activeNav === "#contact"
+                  activeNav === "#contact" || innerRef.contactVisible
                     ? "nav__link active-link"
                     : "nav__link"
                 }

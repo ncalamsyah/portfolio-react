@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
-import Services from "./components/services/Services";
+import Works from "./components/works/Works";
 import Qualification from "./components/qualification/Qualification";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
@@ -14,28 +14,29 @@ const App = () => {
   const { ref: homeRef, inView: homeVisible } = useInView();
   const { ref: aboutRef, inView: aboutVisible } = useInView();
   const { ref: skillsRef, inView: skillsVisible } = useInView();
+  const { ref: worksRef, inView: worksVisible } = useInView();
+  const { ref: qualificationRef, inView: qualificationVisible } = useInView();
+  const { ref: contactRef, inView: contactVisible } = useInView();
 
-  // const aboutRef = useRef();
-  // const [aboutVisible, setAboutVisible] = useState();
-  // console.log("aboutVisible ", aboutVisible);
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     const entry = entries[0];
-  //     setAboutVisible(entry.isIntersecting);
-  //   });
-  //   observer.observe(aboutRef.current);
-  // });
   return (
     <>
-      <Header innerRef={{ homeVisible, aboutVisible, skillsVisible }} />
+      <Header
+        innerRef={{
+          homeVisible,
+          aboutVisible,
+          skillsVisible,
+          worksVisible,
+          qualificationVisible,
+          contactVisible,
+        }}
+      />
       <main className="main">
         <Home innerRef={{ homeRef, homeVisible }} />
         <About innerRef={{ aboutRef, aboutVisible }} />
         <Skills innerRef={{ skillsRef, skillsVisible }} />
-        <Services />
-        <Qualification />
-        <Contact />
+        <Works innerRef={{ worksRef, worksVisible }} />
+        <Qualification innerRef={{ qualificationRef, qualificationVisible }} />
+        <Contact innerRef={{ contactRef, contactVisible }} />
       </main>
 
       <Footer />
