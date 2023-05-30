@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.0fdfdd1e.css",
-    "main.js": "/static/js/main.4d7d5f7c.js",
-    "static/media/about.jpg": "/static/media/about.3077ca7ace5571e8b2a9.jpg",
+    "main.css": "/static/css/main.cbaac85d.css",
+    "main.js": "/static/js/main.a97484dc.js",
+    "static/media/up1.png": "/static/media/up1.93fa1d5fef88b3ef62c9.png",
     "static/media/profile.jpg": "/static/media/profile.e89b89e74c1fbb18f5e5.jpg",
-    "static/media/resume.pdf": "/static/media/resume.ff8388b7a7496cf8a47c.pdf",
+    "static/media/about.jpg": "/static/media/about.f3805c453814fc52da5f.jpg",
+    "static/media/bumdesamanah1.png": "/static/media/bumdesamanah1.f016049dfefd1e5fec10.png",
+    "static/media/resume.pdf": "/static/media/resume.6e4e07d3b5fe1558782e.pdf",
+    "static/media/blues-summit1.jpg": "/static/media/blues-summit1.0e5ee6046cafff6789cd.jpg",
     "index.html": "/index.html",
-    "main.0fdfdd1e.css.map": "/static/css/main.0fdfdd1e.css.map",
-    "main.4d7d5f7c.js.map": "/static/js/main.4d7d5f7c.js.map"
+    "main.cbaac85d.css.map": "/static/css/main.cbaac85d.css.map",
+    "main.a97484dc.js.map": "/static/js/main.a97484dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fdfdd1e.css",
-    "static/js/main.4d7d5f7c.js"
+    "static/css/main.cbaac85d.css",
+    "static/js/main.a97484dc.js"
   ]
 }
