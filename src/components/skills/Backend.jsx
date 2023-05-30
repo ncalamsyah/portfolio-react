@@ -77,7 +77,7 @@ const Backend = ({ innerRef }) => {
             <div className="skills__data">
               <i className="bx bx-badge-check"></i>
               <div className="">
-                <h3 className="skills__name">Firestore</h3>
+                <h3 className="skills__name">Swagger</h3>
                 <span className="skills__level">Basic</span>
               </div>
             </div>
